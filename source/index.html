@@ -1,17 +1,72 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>Название проекта</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="preload" href="#" type="font/woff2" as="font">
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/index.js" defer></script>
-  </head>
-  <body class="page__body">
-    <header class="header">Шапка</header>
-    <main>
-      <h1>Страница для старта</h1>
-    </main>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Drink2Go</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="#" type="font/woff2" as="font">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/index.js" defer></script>
+</head>
+
+<body class="page__body">
+  <header class="header">
+    <div class="header__wrapper wrapper">
+      <div class="header__logo-container">
+        <a class="header__logo-link" href="index.html">
+          <picture>
+            <source media="(min-width: 1440px)" type="image/svg+xml" srcset="icons/stack.svg#main-logo-desktop"
+              width="170" height="36">
+            <source media="(min-width: 767px)" type="image/svg+xml" srcset="icons/stack.svg#main-logo-tablet" width="82"
+              height="36">
+            <img class="logo__image" src="icons/stack.svg#main-logo-mobile" width="32" height="36"
+              alt="Логотип Drink2Go.">
+          </picture>
+        </a>
+        <p class="header__slogan">Интернет-магазин<br>кофейных напитков</p>
+      </div>
+      <nav class="header__navigation navigation">
+        <ul id="menu" class="navigation__menu menu">
+          <li class="menu__item">
+            <a class="menu__link menu__link--current" href="index.html">Главная</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Каталог</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Доставка</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">О нас</a>
+          </li>
+        </ul>
+        <div class="navigation__buttons">
+          <ul class="navigation__list">
+            <li class="navigation__item navigation__item--user">
+              <button class="navigation__button button" type="button">
+                <span class="button__description">Войти</span>
+              </button>
+            </li>
+            <li class="navigation__item navigation__item--basket">
+              <button class="navigation__button button" type="button">
+                <span class="button__description">Корзина</span>
+              </button>
+            </li>
+            <li class="navigation__item navigation__item--burger">
+              <button id="menu-button" class="navigation__button button" type="button">
+                <span class="button__description">Меню</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <h1 class="visually-hidden">Drink2Go</h1>
+  </main>
+  <footer class="footer"></footer>
+</body>
+
 </html>

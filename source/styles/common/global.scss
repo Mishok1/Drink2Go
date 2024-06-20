@@ -1,1 +1,27 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: #ffffff;
+  font-family: "Montserrat-400", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: #333333;
+  text-decoration: none;
+}

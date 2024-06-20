@@ -1,5 +1,51 @@
+@use '../common/variables.scss';
+
 .header {
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
+  background-color: #FFFFFF;
+  color: black;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding-left: 20px;
+
+  @media (min-width: variables.$desktop-width) {
+    padding-left: 40px;
+  }
+}
+
+// .header__logo-link {
+//   @media (min-width: variables.$tablet-width) {
+//     margin: 22px;
+//   }
+// }
+
+.header__slogan {
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+
+  @media (max-width: variables.$desktop-width) {
+    display: none;
+  }
+}
+
+.header__navigation {
+  @media (min-width: variables.$tablet-width) {
+    gap: 60px;
+    padding-right: 20px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    gap: 162px;
+    padding-right: 40px;
+  }
 }

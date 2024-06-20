@@ -1,0 +1,15 @@
+@use '../common/variables.scss';
+
+.wrapper {
+  width: variables.$min-width;
+  margin: 0 auto;
+  // position: relative;
+
+  @media (min-width: variables.$tablet-width) {
+    width: variables.$tablet-width;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: variables.$desktop-width;
+  }
+}
