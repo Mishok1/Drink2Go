@@ -1,5 +1,9 @@
-// .logo {}
+.logo__slogan {
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
 
-// .logo__image {
-
-// }
+  @media (max-width: variables.$desktop-width) {
+    display: none;
+  }
+}

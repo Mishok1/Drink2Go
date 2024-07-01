@@ -22,22 +22,6 @@
   }
 }
 
-// .header__logo-link {
-//   @media (min-width: variables.$tablet-width) {
-//     margin: 22px;
-//   }
-// }
-
-.header__slogan {
-  margin: 0;
-  font-size: 12px;
-  line-height: 16px;
-
-  @media (max-width: variables.$desktop-width) {
-    display: none;
-  }
-}
-
 .header__navigation {
   @media (min-width: variables.$tablet-width) {
     gap: 60px;

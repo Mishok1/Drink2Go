@@ -1,0 +1,36 @@
+@use '../common/variables.scss';
+
+.hero {
+  background-color: #F3EBE1;
+
+  @media (min-width: variables.$tablet-width) {
+    height: 608px;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    height: 714px;
+  }
+}
+
+.hero__wrapper {
+  position: relative;
+
+  @media (min-width: variables.$desktop-width) {
+    height: 714px;
+  }
+}
+
+.hero__slider {
+  padding: 20px 20px 60px 20px;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 60px 80px 0 80px;
+    height: 548px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 165px 80px 84px 105px;
+    height: 100%;
+    box-sizing: border-box;
+  }
+}
