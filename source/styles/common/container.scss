@@ -1,0 +1,14 @@
+@use "variables.scss";
+
+.container {
+  margin: 0 auto;
+  width: variables.$mobile-width;
+
+  @media (min-width: variables.$tablet-width) {
+    width: variables.$tablet-width;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: variables.$desktop-width;
+  }
+}

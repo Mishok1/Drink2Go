@@ -1,5 +1,56 @@
+@use '../common/variables.scss';
+
 .header {
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
+  background-color: #FFFFFF;
+  color: #333333;
+  font-family: "Montserrat-500", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.24px;
+  text-transform: uppercase;
+}
+
+.header__container {
+  max-width: $mobile-width;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+
+  @media (min-width:variables.$tablet-width) {
+    max-width: $tablet-width;
+  }
+
+  @media (min-width:variables.$desktop-width) {
+    max-width: $desktop-width;
+  }
+}
+
+.header__logo {
+  padding: 12px 20px;
+
+  @media (min-width:variables.$tablet-width) {
+    padding: 22px 20px;
+  }
+
+  @media (min-width:variables.$desktop-width) {
+    display: flex;
+    gap: 20px;
+    padding: 22px 40px;
+  }
+}
+
+
+.header__navigation {
+  @media (min-width:variables.$tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+  }
+
+  @media (min-width:variables.$desktop-width) {
+    margin-right: 40px;
+  }
 }

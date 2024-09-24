@@ -71,5 +71,8 @@
     "stylelint": "16.6.1",
     "stylelint-config-htmlacademy": "4.2.3",
     "w3c-html-validator": "1.8.1"
+  },
+  "volta": {
+    "node": "20.17.0"
   }
 }

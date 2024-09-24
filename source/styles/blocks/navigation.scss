@@ -1,0 +1,97 @@
+@use '../common/variables.scss';
+
+.navigation__menu {
+  margin: 0;
+  display: none;
+
+  @media (min-width:variables.$tablet-width) {
+    display: flex;
+    margin-right: 60px;
+  }
+
+  @media (min-width:variables.$desktop-width) {
+    margin-right: 162px;
+    gap: 20px;
+  }
+}
+
+.navigation__buttons {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+  @media (min-width:variables.$desktop-width) {
+    gap: 20px;
+  }
+}
+
+.navigation__item {
+  display: flex;
+  align-items: center;
+
+  &--hidden {
+    @media (min-width:variables.$tablet-width) {
+      display: none;
+    }
+  }
+}
+
+.navigation__button {
+
+  padding: 22px;
+  display: flex;
+
+  @media (min-width:variables.$tablet-width) {
+    padding: 32px 22px;
+  }
+
+  @media (min-width:variables.$desktop-width) {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  &::before {
+    content: "";
+    background: no-repeat center;
+    width: 16px;
+    height: 16px;
+    display: flex;
+  }
+
+  &--user::before {
+    background-image: (url("../../icons/user.svg"));
+  }
+
+  &--cart::before {
+    background-image: (url("../../icons/cart.svg"));
+  }
+
+  &--menu::before {
+    background-image: (url("../../icons/menu.svg"));
+  }
+
+  &--open::before {
+    background-image: (url("../../icons/menu-open.svg"));
+  }
+
+  &:hover,
+  &:focus {
+    color: $primary-color;
+  }
+
+  &:active {
+    color: $primary-color;
+    background-color: #F0EBFF;
+  }
+
+}
+
+.navigation__button-text {
+  display: none;
+
+  @media (min-width:variables.$desktop-width) {
+    display: block;
+  }
+}

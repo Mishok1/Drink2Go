@@ -1,0 +1,14 @@
+@use '../common/variables.scss';
+
+.logo__description {
+  display: none;
+
+  @media (min-width:variables.$desktop-width) {
+    display: block;
+    font-family: "Montserrat-400", sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    // max-width: 130px;
+    letter-spacing: normal;
+  }
+}
