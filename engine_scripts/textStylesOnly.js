@@ -1,5 +1,5 @@
 module.exports = async (page, scenario, vp) => {
-  console.log('SCENARIO > ' + scenario.label);
+  console.log(`SCENARIO > ${ scenario.label}`);
 
   const BACKSTOP_TEST_CSS_OVERRIDE = `
   *:where(:not(.visually-hidden, :root, head, script)) {
@@ -26,34 +26,32 @@ module.exports = async (page, scenario, vp) => {
   await require('./overrideCSS')(page, scenario, BACKSTOP_TEST_CSS_OVERRIDE);
 
   // add more ready handlers here...
-  await page.waitForFunction(() => {
-    return document.fonts.ready.then(() => {
-      console.log('Fonts loaded');
-      return true;
-    });
-  });
+  await page.waitForFunction(() => document.fonts.ready.then(() => {
+    console.log('Fonts loaded');
+    return true;
+  }));
   await page.evaluate(() => {
-    document.querySelectorAll('br').forEach(s => {
+    document.querySelectorAll('br').forEach((s) => {
       s.remove();
-    })
+    });
   });
   if (scenario.content) {
     function xpathPrepare(xpath, searchString) {
-      return xpath.replace("$u", searchString.toUpperCase())
-        .replace("$l", searchString.toLowerCase())
-        .replace("$s", searchString.toLowerCase());
+      return xpath.replace('$u', searchString.toUpperCase())
+        .replace('$l', searchString.toLowerCase())
+        .replace('$s', searchString.toLowerCase());
     }
-    const selectors = []
+    const selectors = [];
     for (const text of [].concat(scenario.content)) {
-      const [elementHandle] = await page.$x(`//${xpathPrepare("*[text()[contains(translate(., '$u', '$l'), '$s')]]", text)}`);
+      const [elementHandle] = await page.$x(`//${xpathPrepare('*[text()[contains(translate(., \'$u\', \'$l\'), \'$s\')]]', text)}`);
       if (!elementHandle) {
-        throw new Error('Element not found with text "' + text + '"');
+        throw new Error(`Element not found with text "${ text }"`);
       }
       await page.evaluate((element, text) => {
-        element.dataset.testText = `${text}`
-      }, elementHandle, text)
-      selectors.push(`[data-test-text="${text}"]`)
+        element.dataset.testText = `${text}`;
+      }, elementHandle, text);
+      selectors.push(`[data-test-text="${text}"]`);
     }
-    scenario.selectors = selectors
+    scenario.selectors = selectors;
   }
 };

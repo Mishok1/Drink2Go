@@ -1,10 +1,8 @@
 module.exports = async (page, { section = 'body' }, vp) => {
-  await page.waitForFunction(() => {
-    return document.fonts.ready.then(() => {
-      console.log('Fonts loaded');
-      return true;
-    });
-  });
+  await page.waitForFunction(() => document.fonts.ready.then(() => {
+    console.log('Fonts loaded');
+    return true;
+  }));
   const interactiveElsSelector = `${section} :is(a, button, label, input[type='radio'], input[type='checkbox'])`;
   const content = `
       const preventer = (e) => e.preventDefault();
@@ -42,8 +40,8 @@ module.exports = async (page, { section = 'body' }, vp) => {
       y: l.y - r.y,
       width: l.width - r.width,
       height: l.height - r.height
-    }
-  }
+    };
+  };
   const results = [];
   for await (const el of elts) {
     const isVisibleHandle = await page.evaluateHandle((e) => {
@@ -59,7 +57,7 @@ module.exports = async (page, { section = 'body' }, vp) => {
 
     await el.evaluate((element) => {
       element.scrollIntoView({block: 'center', inline: 'center', behavior: 'instant'});
-    })
+    });
     const bb = await el.boundingBox();
     if (bb.width === 0 || bb.height === 0) {
       // await el.evaluate((h) => h.style.visibility = 'visible');
@@ -73,7 +71,7 @@ module.exports = async (page, { section = 'body' }, vp) => {
     const nb = ne ? await ne.boundingBox() : null;
     const code = await el.evaluate((h) => h.outerHTML);
     if (!nb) {
-      console.log("no next element", code);
+      console.log('no next element', code);
     }
 
     // эмулируем page.mouse.move(координаты элемента),
@@ -100,28 +98,28 @@ module.exports = async (page, { section = 'body' }, vp) => {
       results.push({
         code,
         diff: diff(bbActive, bbHover),
-        title: "В состоянии «:hover» позиция/размеры меняются"
+        title: 'В состоянии «:hover» позиция/размеры меняются'
       });
       await el.evaluate((h) => h.style.visibility = 'visible');
     } else if (!eq(nbActive, nbHover)) {
       results.push({
         code,
         diff: diff(nbActive, nbHover),
-        title: "В состоянии «:hover» позиция/размеры следующего элемента меняются"
+        title: 'В состоянии «:hover» позиция/размеры следующего элемента меняются'
       });
       await el.evaluate((h) => h.style.visibility = 'visible');
     } else if (!eq(bb, bbActive)) {
       results.push({
         code,
         diff: diff(bb, bbActive),
-        title: "В состоянии «:active» позиция/размеры меняются"
+        title: 'В состоянии «:active» позиция/размеры меняются'
       });
       await el.evaluate((h) => h.style.visibility = 'visible');
     } else if (!eq(nb, nbActive)) {
       results.push({
         code,
         diff: diff(nb, nbActive),
-        title: "В состоянии «:active» позиция/размеры следующего элемента меняются"
+        title: 'В состоянии «:active» позиция/размеры следующего элемента меняются'
       });
       await el.evaluate((h) => h.style.visibility = 'visible');
     }
@@ -131,4 +129,4 @@ module.exports = async (page, { section = 'body' }, vp) => {
   if (results.length) {
     // throw new Error(results.map((r) => r.title + '\n' + r.code + '\n' + JSON.stringify(r.diff)).join('\n'));
   }
-}
+};

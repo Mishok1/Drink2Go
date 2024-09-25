@@ -1,7 +1,7 @@
-@use '../common/variables.scss';
+@use "../common/variables.scss";
 
 .header {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: #333333;
   font-family: "Montserrat-500", sans-serif;
   font-size: 12px;
@@ -18,11 +18,11 @@
   justify-content: space-between;
   position: relative;
 
-  @media (min-width:variables.$tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     max-width: $tablet-width;
   }
 
-  @media (min-width:variables.$desktop-width) {
+  @media (min-width: variables.$desktop-width) {
     max-width: $desktop-width;
   }
 }
@@ -30,11 +30,11 @@
 .header__logo {
   padding: 12px 20px;
 
-  @media (min-width:variables.$tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     padding: 22px 20px;
   }
 
-  @media (min-width:variables.$desktop-width) {
+  @media (min-width: variables.$desktop-width) {
     display: flex;
     gap: 20px;
     padding: 22px 40px;
@@ -43,14 +43,14 @@
 
 
 .header__navigation {
-  @media (min-width:variables.$tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-right: 20px;
   }
 
-  @media (min-width:variables.$desktop-width) {
+  @media (min-width: variables.$desktop-width) {
     margin-right: 40px;
   }
 }

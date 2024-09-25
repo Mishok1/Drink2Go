@@ -1,11 +1,11 @@
-@use '../common/variables.scss';
+@use "../common/variables.scss";
 
 .menu {
   list-style-type: none;
   padding: 0;
 
   &--open {
-    @media (max-width:variables.$tablet-width) {
+    @media (max-width: variables.$tablet-width) {
       position: absolute;
       display: flex;
       z-index: 1;
@@ -13,8 +13,8 @@
       width: 100%;
       top: 100%;
       left: 0;
-      background-color: #fff;
-      border-bottom: 1px solid #F0EBFF;
+      background-color: #ffffff;
+      border-bottom: 1px solid #f0ebff;
     }
   }
 }
@@ -23,9 +23,9 @@
   padding: 20px 0;
   width: 100%;
   text-align: center;
-  border-top: 1px solid #F0EBFF;
+  border-top: 1px solid #f0ebff;
 
-  @media (min-width:variables.$tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     padding: 32px 20px;
 
     &--current {
@@ -35,12 +35,13 @@
     }
   }
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: $primary-color;
   }
 
   &:active {
     color: $primary-color;
-    background-color: #F0EBFF;
+    background-color: #f0ebff;
   }
 }

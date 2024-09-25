@@ -1,12 +1,10 @@
 module.exports = async (page, scenario, vp) => {
-  console.log('SCENARIO > ' + scenario.label);
+  console.log(`SCENARIO > ${ scenario.label}`);
   // add more ready handlers here...
-  await page.waitForFunction(() => {
-    return document.fonts.ready.then(() => {
-      console.log('Fonts loaded');
-      return true;
-    });
-  });
+  await page.waitForFunction(() => document.fonts.ready.then(() => {
+    console.log('Fonts loaded');
+    return true;
+  }));
   await page.evaluate(() => {
     const $textEls = [...document.querySelectorAll('input[type="text"],input[type="email"]')];
     $textEls.forEach((el) => {

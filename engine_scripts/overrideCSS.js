@@ -10,5 +10,5 @@ module.exports = async (page, scenario, BACKSTOP_TEST_CSS_OVERRIDE = 'html {back
     document.head.appendChild(style);
   });
 
-  console.log('BACKSTOP_TEST_CSS_OVERRIDE injected for: ' + scenario.label);
+  console.log(`BACKSTOP_TEST_CSS_OVERRIDE injected for: ${ scenario.label}`);
 };

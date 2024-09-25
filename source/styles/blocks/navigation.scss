@@ -1,15 +1,15 @@
-@use '../common/variables.scss';
+@use "../common/variables.scss";
 
 .navigation__menu {
   margin: 0;
   display: none;
 
-  @media (min-width:variables.$tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     display: flex;
     margin-right: 60px;
   }
 
-  @media (min-width:variables.$desktop-width) {
+  @media (min-width: variables.$desktop-width) {
     margin-right: 162px;
     gap: 20px;
   }
@@ -21,7 +21,7 @@
   padding: 0;
   display: flex;
 
-  @media (min-width:variables.$desktop-width) {
+  @media (min-width: variables.$desktop-width) {
     gap: 20px;
   }
 }
@@ -31,7 +31,7 @@
   align-items: center;
 
   &--hidden {
-    @media (min-width:variables.$tablet-width) {
+    @media (min-width: variables.$tablet-width) {
       display: none;
     }
   }
@@ -42,11 +42,11 @@
   padding: 22px;
   display: flex;
 
-  @media (min-width:variables.$tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     padding: 32px 22px;
   }
 
-  @media (min-width:variables.$desktop-width) {
+  @media (min-width: variables.$desktop-width) {
     display: flex;
     flex-direction: row;
     gap: 8px;
@@ -83,15 +83,14 @@
 
   &:active {
     color: $primary-color;
-    background-color: #F0EBFF;
+    background-color: #f0ebff;
   }
-
 }
 
 .navigation__button-text {
   display: none;
 
-  @media (min-width:variables.$desktop-width) {
+  @media (min-width: variables.$desktop-width) {
     display: block;
   }
 }
