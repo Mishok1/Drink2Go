@@ -1,0 +1,1 @@
+var n=document.querySelector("#menu"),e=document.querySelector("#menu-button");e.addEventListener("click",t=>{t.preventDefault(),e.classList.toggle("navigation__button--open"),n.classList.toggle("menu--open")});
