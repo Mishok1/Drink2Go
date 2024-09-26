@@ -93,6 +93,24 @@
         <h2 class="catalog__title title">Каталог кофейных напитков</h2>
       </div>
     </section>
+    <section class="map">
+      <div class="map__container container">
+        <h2 class="visually-hidden">Карта</h2>
+        <picture>
+          <source media="(min-width: 1440px)" type="image/webp"
+            srcset="images/map-desktop@1x.webp 1x, images/map-desktop@2x.webp 2x" width="1440" height="540">
+          <source media="(min-width: 768px)" type="image/webp"
+            srcset="images/map-tablet@1x.webp 1x, images/map-tablet@2x.webp 2x" width="768" height="480">
+          <source type="image/webp" srcset="images/map@1x.webp 1x, images/map@2x.webp 2x" width="" height="">
+          <source media="(min-width: 1440px)" type="image/jpeg"
+            srcset="images/map-desktop@1x.jpg 1x, images/map-desktop@2x.jpg 2x" width="1440" height="540">
+          <source media="(min-width: 768px)" type="image/jpeg"
+            srcset="images/map-tablet@1x.jpg 1x, images/map-tablet@2x.jpg 2x" width="768" height="480">
+          <img class="image" src="images/map@1x.jpg" srcset="images/map@2x.jpg 2x" width="320" height="420"
+            alt="Карта.">
+        </picture>
+      </div>
+    </section>
   </main>
   <footer class="footer">
     <div class="footer__container container">
@@ -174,7 +192,9 @@
           <p class="footer__address-text footer__address-text--tel">+7 (999) 999-99-99</p>
         </address>
       </section>
-      <p class="footer__copyright">Разработано в <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noreferrer noopener">HTML Academy</a></p>
+      <p class="footer__copyright">Разработано в <a class="footer__copyright-link"
+          href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noreferrer noopener">HTML Academy</a>
+      </p>
     </div>
   </footer>
 </body>
