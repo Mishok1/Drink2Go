@@ -1,0 +1,48 @@
+@use "../common/variables.scss";
+
+.catalog {
+  padding: 50px 20px 36px;
+  background-color: #f8f8f8;
+}
+
+.catalog__container {
+  padding: 0 20px;
+}
+
+.catalog__badge {
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.catalog__title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.catalog__form {
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 30px;
+}
+
+.catalog__sorting {
+  margin-bottom: 16px;
+}
+
+.catalog__list {
+  margin: 0 0 40px;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  row-gap: 20px;
+  grid-template-columns: 1fr;
+}
+
+.catalog__item {
+  background-color: #ffffff;
+  padding: 40px 20px 20px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, auto);
+}

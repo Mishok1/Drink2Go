@@ -1,0 +1,29 @@
+
+
+.checkbox__label {
+  display: flex;
+  gap: 10px;
+}
+
+.checkbox__input {
+  display: none;
+
+  &:disabled + .checkbox__control-mark {
+    background-image: url("../../icons/checkbox-disabled.svg");
+  }
+
+  &:disabled ~ .checkbox__description {
+    color: #bdbdbd;
+  }
+}
+
+.checkbox__control-mark {
+  display: block;
+  width: 42px;
+  height: 24px;
+  background: url("../../icons/checkbox-empty.svg") no-repeat center;
+}
+
+.checkbox__input:checked + .checkbox__control-mark {
+  background-image: url("../../icons/checkbox.svg");
+}

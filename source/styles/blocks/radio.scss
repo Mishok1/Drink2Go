@@ -1,0 +1,30 @@
+.radio__label {
+  display: flex;
+  gap: 10px;
+}
+
+.radio__input {
+  display: none;
+
+  &:disabled + .radio__control-mark {
+    border-color: #e2e2e2;
+  }
+
+  &:disabled ~ .radio__description {
+    color: #bdbdbd;
+  }
+}
+
+.radio__control-mark {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 2px solid #bdbdbd;
+}
+
+.radio__input:checked + .radio__control-mark {
+  background-image: url("../../icons/radio.svg");
+  border: none;
+}
