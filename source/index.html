@@ -93,12 +93,20 @@
         <h2 class="catalog__title title">Каталог кофейных напитков</h2>
         <!-- enctype='multipart/form-data' -->
         <form class="catalog__form form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="form__field">
+          <fieldset class="form__field ">
             <legend class="form__title">Цена</legend>
-            <input type="range">
-            <div class="form__range-price">
-              <div></div>
-              <div></div>
+            <div class="form__range-slider range-slider">
+              <div class="range-slider__range" id="slider"></div>
+              <div class="range-slider__prices">
+                <label class="range-slider__label">
+                  <span class="visually-hidden">Минимальная цена.</span>
+                  <input class="range-slider__price range-slider__price--from" type="number" name="price" min="0" max="1000" placeholder="0" required>
+                </label>
+                <label class="range-slider__label">
+                  <span class="visually-hidden">Изменить минимальную цену.</span>
+                  <input class="range-slider__price range-slider__price--to" type="number" name="price" min="0" max="1000" placeholder="0" required>
+                </label>
+              </div>
             </div>
           </fieldset>
           <fieldset class="form__field">
@@ -179,74 +187,86 @@
             <button class="form__button button button--secondary" type="button">Сбросить</button>
           </div>
         </form>
-        <section class="catalog__sorting sorting">
+        <div class="catalog__sorting sorting">
           <h3 class="sorting__title">Сортировка:</h3>
           <select class="sorting__select" name="sorting">
             <option class="sorting__option" value="default">по умолчанию</option>
             <option class="sorting__option" value="new">новинки</option>
             <option class="sorting__option" value="sale">со скидкой</option>
           </select>
-        </section>
+        </div>
         <div class="catalog__wrapper">
           <h3 class="visually-hidden">Список напитков</h3>
           <ul class="catalog__list">
             <li class="catalog__item card">
               <picture>
-                <source type="image/webp" srcset="images/coffee-main@1x.webp 1x, images/coffee-main@2x.webp 2x" width="130" height="188">
-                <img class="card__image" src="images/coffee-main@1x.jpg" srcset="images/coffee-main@2x.jpg 2x" width="130" height="188" alt="Кофе.">
+                <source type="image/webp" srcset="images/coffee-main@1x.webp 1x, images/coffee-main@2x.webp 2x"
+                  width="130" height="188">
+                <img class="card__image" src="images/coffee-main@1x.jpg" srcset="images/coffee-main@2x.jpg 2x"
+                  width="130" height="188" alt="Кофе.">
               </picture>
               <h3 class="card__title title title--sub">Декаф Флэт Уайт</h3>
-              <p class="card__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+              <p class="card__description">Кофе без кофеина из Эфиопии<br>с натуральным фермерским молоком</p>
               <span class="card__price">225₽</span>
               <button class="card__button button button--primary">В корзину</button>
             </li>
             <li class="catalog__item card">
               <picture>
-                <source type="image/webp" srcset="images/coffee-purple@1x.webp 1x, images/coffee-purple@2x.webp 2x" width="130" height="188">
-                <img class="card__image" src="images/coffee-purple@1x.jpg" srcset="images/coffee-purple@2x.jpg 2x" width="130" height="188" alt="Кофе.">
+                <source type="image/webp" srcset="images/coffee-purple@1x.webp 1x, images/coffee-purple@2x.webp 2x"
+                  width="130" height="188">
+                <img class="card__image" src="images/coffee-purple@1x.jpg" srcset="images/coffee-purple@2x.jpg 2x"
+                  width="130" height="188" alt="Кофе.">
               </picture>
               <h3 class="card__title title title--sub">Декаф Флэт Уайт</h3>
-              <p class="card__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+              <p class="card__description">Кофе без кофеина из Эфиопии<br>с натуральным фермерским молоком</p>
               <span class="card__price">225₽</span>
               <button class="card__button button button--primary">В корзину</button>
             </li>
             <li class="catalog__item card">
               <picture>
-                <source type="image/webp" srcset="images/coffee-black@1x.webp 1x, images/coffee-black@2x.webp 2x" width="130" height="188">
-                <img class="card__image" src="images/coffee-black@1x.jpg" srcset="images/coffee-black@2x.jpg 2x" width="130" height="188" alt="Кофе.">
+                <source type="image/webp" srcset="images/coffee-black@1x.webp 1x, images/coffee-black@2x.webp 2x"
+                  width="130" height="188">
+                <img class="card__image" src="images/coffee-black@1x.jpg" srcset="images/coffee-black@2x.jpg 2x"
+                  width="130" height="188" alt="Кофе.">
               </picture>
               <h3 class="card__title title title--sub">Декаф Флэт Уайт</h3>
-              <p class="card__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+              <p class="card__description">Кофе без кофеина из Эфиопии<br>с натуральным фермерским молоком</p>
               <span class="card__price">225₽</span>
               <button class="card__button button button--primary">В корзину</button>
             </li>
             <li class="catalog__item card">
               <picture>
-                <source type="image/webp" srcset="images/coffee-pink@1x.webp 1x, images/coffee-pink@2x.webp 2x" width="130" height="188">
-                <img class="card__image" src="images/coffee-pink@1x.jpg" srcset="images/coffee-pink@2x.jpg 2x" width="130" height="188" alt="Кофе.">
+                <source type="image/webp" srcset="images/coffee-pink@1x.webp 1x, images/coffee-pink@2x.webp 2x"
+                  width="130" height="188">
+                <img class="card__image" src="images/coffee-pink@1x.jpg" srcset="images/coffee-pink@2x.jpg 2x"
+                  width="130" height="188" alt="Кофе.">
               </picture>
               <h3 class="card__title title title--sub">Декаф Флэт Уайт</h3>
-              <p class="card__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+              <p class="card__description">Кофе без кофеина из Эфиопии<br>с натуральным фермерским молоком</p>
               <span class="card__price">225₽</span>
               <button class="card__button button button--primary">В корзину</button>
             </li>
             <li class="catalog__item card">
               <picture>
-                <source type="image/webp" srcset="images/coffee-braun@1x.webp 1x, images/coffee-braun@2x.webp 2x" width="130" height="188">
-                <img class="card__image" src="images/coffee-braun@1x.jpg" srcset="images/coffee-braun@2x.jpg 2x" width="130" height="188" alt="Кофе.">
+                <source type="image/webp" srcset="images/coffee-braun@1x.webp 1x, images/coffee-braun@2x.webp 2x"
+                  width="130" height="188">
+                <img class="card__image" src="images/coffee-braun@1x.jpg" srcset="images/coffee-braun@2x.jpg 2x"
+                  width="130" height="188" alt="Кофе.">
               </picture>
               <h3 class="card__title title title--sub">Декаф Флэт Уайт</h3>
-              <p class="card__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+              <p class="card__description">Кофе без кофеина из Эфиопии<br>с натуральным фермерским молоком</p>
               <span class="card__price">225₽</span>
               <button class="card__button button button--primary">В корзину</button>
             </li>
             <li class="catalog__item card">
               <picture>
-                <source type="image/webp" srcset="images/coffee-yellow@1x.webp 1x, images/coffee-yellow@2x.webp 2x" width="130" height="188">
-                <img class="card__image" src="images/coffee-yellow@1x.jpg" srcset="images/coffee-yellow@2x.jpg 2x" width="130" height="188" alt="Кофе.">
+                <source type="image/webp" srcset="images/coffee-yellow@1x.webp 1x, images/coffee-yellow@2x.webp 2x"
+                  width="130" height="188">
+                <img class="card__image" src="images/coffee-yellow@1x.jpg" srcset="images/coffee-yellow@2x.jpg 2x"
+                  width="130" height="188" alt="Кофе.">
               </picture>
               <h3 class="card__title title title--sub">Декаф Флэт Уайт</h3>
-              <p class="card__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+              <p class="card__description">Кофе без кофеина из Эфиопии<br>с натуральным фермерским молоком</p>
               <span class="card__price">225₽</span>
               <button class="card__button button button--primary">В корзину</button>
             </li>
@@ -280,7 +300,7 @@
             srcset="images/map-desktop@1x.jpg 1x, images/map-desktop@2x.jpg 2x" width="1440" height="540">
           <source media="(min-width: 768px)" type="image/jpeg"
             srcset="images/map-tablet@1x.jpg 1x, images/map-tablet@2x.jpg 2x" width="768" height="480">
-          <img class="image" src="images/map@1x.jpg" srcset="images/map@2x.jpg 2x" width="320" height="420"
+          <img class="map__image" src="images/map@1x.jpg" srcset="images/map@2x.jpg 2x" width="320" height="420"
             alt="Карта.">
         </picture>
       </div>

@@ -15,6 +15,23 @@
   margin-bottom: 20px;
 }
 
+.form__range-slider {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 280px;
+
+  @media (min-width:variables.$tablet-width) {
+    gap: 21px;
+    width: 223px;
+  }
+
+  @media (min-width:variables.$desktop-width) {
+    width: 318px;
+    gap: 25px;
+  }
+}
+
 .form__list {
   margin: 0;
   padding: 0;
@@ -27,11 +44,22 @@
 .form__buttons {
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
+  gap: 20px;
+
+  @media (min-width:variables.$tablet-width) {
+    flex-direction: row;
+    grid-column: 1 / 4;
+    justify-content: center;
+  }
+
+  @media (min-width:variables.$desktop-width) {
+    grid-column: 1 / 2;
+    margin-top: 10px;
+  }
 }
 
-// .form__button {
-//   &[type=submit] {
-
-//   }
-// }
+.form__button {
+  @media (min-width:variables.$desktop-width) {
+    width: 100%;
+  }
+}
