@@ -11,7 +11,7 @@
 </head>
 
 <body class="page__body">
-  <header class="header">
+  <header class="header" data-test="header">
     <div class="header__container container">
       <a class="header__logo logo" href="index.html">
         <picture>
@@ -50,7 +50,7 @@
             </button>
           </li>
           <li class="navigation__item navigation__item--hidden">
-            <button class="navigation__button navigation__button--menu button" id="menu-button" type="button">
+            <button class="navigation__button navigation__button--menu button js-toggle-button" id="menu-button" type="button">
               <span class="navigation__button-text">Меню</span>
             </button>
           </li>
@@ -60,7 +60,7 @@
   </header>
   <main>
     <h1 class="visually-hidden">Drink2Go</h1>
-    <section class="hero">
+    <section class="hero" data-test="hero">
       <div class="hero__container container">
         <h2 class="visually-hidden">Слайдер</h2>
         <div class="hero__slider slider">
@@ -97,14 +97,14 @@
             </li>
           </ul>
           <div class="slider__buttons">
-            <button class="slider__button" type="button">
+            <button class="slider__button slider-button-prev" type="button">
               <span class="visually-hidden">Назад</span>
             </button>
-            <button class="slider__button" type="button">
+            <button class="slider__button slider-button-next" type="button">
               <span class="visually-hidden">Вперёд</span>
             </button>
           </div>
-          <div class="slider__pagination">
+          <div class="slider__pagination slider-pagination">
             <button class="slider__pagination-button slider__pagination-button--current" type="button">
               <span class="visually-hidden">Первый слайд</span>
             </button>
@@ -118,7 +118,7 @@
         </div>
       </div>
     </section>
-    <section class="advantages">
+    <section class="advantages" data-test="features">
       <div class="advantages__container container">
         <span class="advantages__badge badge">Преимущества</span>
         <h2 class="advantages__title title">Главные причины выбрать Drink2Go</h2>
@@ -142,7 +142,7 @@
         </ul>
       </div>
     </section>
-    <section class="catalog">
+    <section class="catalog" data-test="catalog">
       <div class="catalog__container container">
         <span class="catalog__badge badge">Каталог</span>
         <h2 class="catalog__title title">Каталог кофейных напитков</h2>
@@ -265,7 +265,7 @@
               <h3 class="card__title title title--sub">Декаф Флэт Уайт</h3>
               <p class="card__description">Кофе без кофеина из Эфиопии<br>с натуральным фермерским молоком</p>
               <span class="card__price">225₽</span>
-              <button class="card__button button button--primary">В корзину</button>
+              <button class="card__button button button--primary" type="button">В корзину</button>
             </li>
             <li class="catalog__item card">
               <picture>
@@ -277,7 +277,7 @@
               <h3 class="card__title title title--sub">Декаф Флэт Уайт</h3>
               <p class="card__description">Кофе без кофеина из Эфиопии<br>с натуральным фермерским молоком</p>
               <span class="card__price">225₽</span>
-              <button class="card__button button button--primary">В корзину</button>
+              <button class="card__button button button--primary" type="button">В корзину</button>
             </li>
             <li class="catalog__item card">
               <picture>
@@ -289,7 +289,7 @@
               <h3 class="card__title title title--sub">Декаф Флэт Уайт</h3>
               <p class="card__description">Кофе без кофеина из Эфиопии<br>с натуральным фермерским молоком</p>
               <span class="card__price">225₽</span>
-              <button class="card__button button button--primary">В корзину</button>
+              <button class="card__button button button--primary" type="button">В корзину</button>
             </li>
             <li class="catalog__item card">
               <picture>
@@ -301,7 +301,7 @@
               <h3 class="card__title title title--sub">Декаф Флэт Уайт</h3>
               <p class="card__description">Кофе без кофеина из Эфиопии<br>с натуральным фермерским молоком</p>
               <span class="card__price">225₽</span>
-              <button class="card__button button button--primary">В корзину</button>
+              <button class="card__button button button--primary" type="button">В корзину</button>
             </li>
             <li class="catalog__item card">
               <picture>
@@ -313,7 +313,7 @@
               <h3 class="card__title title title--sub">Декаф Флэт Уайт</h3>
               <p class="card__description">Кофе без кофеина из Эфиопии<br>с натуральным фермерским молоком</p>
               <span class="card__price">225₽</span>
-              <button class="card__button button button--primary">В корзину</button>
+              <button class="card__button button button--primary" type="button">В корзину</button>
             </li>
             <li class="catalog__item card">
               <picture>
@@ -325,12 +325,12 @@
               <h3 class="card__title title title--sub">Декаф Флэт Уайт</h3>
               <p class="card__description">Кофе без кофеина из Эфиопии<br>с натуральным фермерским молоком</p>
               <span class="card__price">225₽</span>
-              <button class="card__button button button--primary">В корзину</button>
+              <button class="card__button button button--primary" type="button">В корзину</button>
             </li>
           </ul>
         </div>
         <div class="catalog__pagination pagination">
-          <button class="pagination__button pagination__button--previous button">
+          <button class="pagination__button pagination__button--previous button" type="button">
             <span class="pagination__text">Назад</span>
           </button>
           <ul class="pagination__list">
@@ -338,13 +338,13 @@
             <li class="pagination__item pagination__item--current">2</li>
             <li class="pagination__item">3</li>
           </ul>
-          <button class="pagination__button pagination__button--next button">
+          <button class="pagination__button pagination__button--next button" type="button">
             <span class="pagination__text">Вперёд</span>
           </button>
         </div>
       </div>
     </section>
-    <section class="map">
+    <section class="map" data-test="map">
       <div class="map__container container">
         <h2 class="visually-hidden">Карта</h2>
         <picture>
@@ -352,7 +352,7 @@
             srcset="images/map-desktop@1x.webp 1x, images/map-desktop@2x.webp 2x" width="1440" height="540">
           <source media="(min-width: 768px)" type="image/webp"
             srcset="images/map-tablet@1x.webp 1x, images/map-tablet@2x.webp 2x" width="768" height="480">
-          <source type="image/webp" srcset="images/map@1x.webp 1x, images/map@2x.webp 2x" width="" height="">
+          <source type="image/webp" srcset="images/map@1x.webp 1x, images/map@2x.webp 2x" width="320" height="420">
           <source media="(min-width: 1440px)" type="image/jpeg"
             srcset="images/map-desktop@1x.jpg 1x, images/map-desktop@2x.jpg 2x" width="1440" height="540">
           <source media="(min-width: 768px)" type="image/jpeg"
@@ -363,7 +363,7 @@
       </div>
     </section>
   </main>
-  <footer class="footer">
+  <footer class="footer" data-test="map">
     <div class="footer__container container">
       <a class="footer__logo logo" href="index.html">
         <picture>

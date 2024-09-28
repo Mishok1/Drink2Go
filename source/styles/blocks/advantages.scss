@@ -9,6 +9,10 @@
     line-height: 24px;
     margin-top: 188px;
   }
+
+  @media (min-width: variables.$tablet-width) {
+    margin: 0;
+  }
 }
 
 .advantages__container {
