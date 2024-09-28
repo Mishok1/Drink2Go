@@ -61,7 +61,55 @@
   <main>
     <h1 class="visually-hidden">Drink2Go</h1>
     <section class="hero">
-      <h2 class="hero__title title">Декаф Флэт Уайт</h2>
+      <div class="hero__container container">
+        <h2 class="visually-hidden">Слайдер</h2>
+        <div class="hero__slider slider">
+          <ul class="slider__list">
+            <li class="slider__item">
+              <picture>
+                <source media="(min-width: 1440px)" type="image/webp"
+                  srcset="images/slider-1-desktop@1x.webp 1x, images/slider-1-desktop@2x.webp 2x" width="600"
+                  height="600">
+                <source media="(min-width: 768px)" type="image/webp"
+                  srcset="images/slider-1-tablet@1x.webp 1x, images/slider-1-tablet@2x.webp 2x" width="476"
+                  height="476">
+                <source type="image/webp" srcset="images/slider-1@1x.webp 1x, images/slider-1@2x.webp 2x" width="280"
+                  height="280">
+                <source media="(min-width: 1440px)" type="image/jpg"
+                  srcset="images/slider-1-desktop@1x.jpg 1x, images/slider-1-desktop@2x.jpg 2x" width="600"
+                  height="600">
+                <source media="(min-width: 768px)" type="image/jpg"
+                  srcset="images/slider-1-tablet@1x.jpg 1x, images/slider-1-tablet@2x.jpg 2x" width="476" height="476">
+                <img class="slider__image" src="images/slider-1@1x.jpg" srcset="images/slider-1@2x.jpg 2x" width="280"
+                  height="280" alt=".">
+              </picture>
+              <span class="slider__badge badge">Новинка!</span>
+              <h3 class="slider__title">Декаф Флэт Уайт</h3>
+              <p class="slider__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком
+                —
+                то, что нужно для расслабления после тяжёлого рабочего дня</p>
+              <div class="slider__prices">
+                <span class="slider__old-price">295₽</span>
+                <span class="slider__new-price">225₽</span>
+              </div>
+              <a class="slider__link" href="#">Заказать</a>
+            </li>
+          </ul>
+          <div class="slider__buttons">
+            <button class="slider__button" type="button">
+              <span class="visually-hidden">Назад</span>
+            </button>
+            <button class="slider__button" type="button">
+              <span class="visually-hidden">Вперёд</span>
+            </button>
+          </div>
+          <div class="slider__pagination">
+            <button class="slider__pagination-button" type="button">Первый слайд</button>
+            <button class="slider__pagination-button" type="button">Второй слайд</button>
+            <button class="slider__pagination-button" type="button">Третий слайд</button>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="advantages">
       <div class="advantages__container container">
@@ -100,11 +148,13 @@
               <div class="range-slider__prices">
                 <label class="range-slider__label">
                   <span class="visually-hidden">Минимальная цена.</span>
-                  <input class="range-slider__price range-slider__price--from" type="number" name="price" min="0" max="1000" placeholder="0" required>
+                  <input class="range-slider__price range-slider__price--from" type="number" name="price" min="0"
+                    max="1000" placeholder="0" required>
                 </label>
                 <label class="range-slider__label">
                   <span class="visually-hidden">Изменить минимальную цену.</span>
-                  <input class="range-slider__price range-slider__price--to" type="number" name="price" min="0" max="1000" placeholder="0" required>
+                  <input class="range-slider__price range-slider__price--to" type="number" name="price" min="0"
+                    max="1000" placeholder="0" required>
                 </label>
               </div>
             </div>

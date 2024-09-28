@@ -1,0 +1,111 @@
+@use '../common/variables.scss';
+
+.slider__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.slider__item {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  column-gap: 20px;
+  justify-items: flex-start;
+}
+
+.slider__image {
+  margin-bottom: 10px;
+  grid-column: 1 / 3;
+}
+
+.slider__badge {
+  grid-column: 1 / 3;
+  margin: 0 auto 4px;
+}
+
+.slider__title {
+  margin: 0 0 10px 0;
+  color: #333;
+  text-align: center;
+  font-family: "Montserrat-700", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0.72px;
+  grid-column: 1 / 3;
+}
+
+.slider__description {
+  margin: 0 0 20px 0;
+  text-align: center;
+  color: #333;
+  font-size: 14px;
+  line-height: 20px;
+  grid-column: 1 / 3;
+}
+
+.slider__prices {
+  display: flex;
+  gap: 6px;
+  grid-column: 1 / 2;
+  align-items: center;
+  justify-self: flex-end;
+}
+
+.slider__old-price {
+  text-decoration: line-through;
+  color: $primary-color;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.slider__new-price {
+  font-family: "Montserrat-600", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.slider__link {
+  padding: 8px 20px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: $primary-color;
+  border-radius: 4px;
+  grid-column: 2 / 3;
+}
+
+.slider__button {
+  border: none;
+  background: none;
+  height: 100%;
+  width: 20px;
+  position: absolute;
+  padding: 0;
+  top: 0;
+  left: 0;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 11px;
+    height: 20px;
+    margin: 0 auto;
+    background: url('../../icons/arrow.svg') no-repeat center;
+  }
+
+
+  &:nth-child(2) {
+    left: unset;
+    right: 0;
+  }
+  &:nth-child(2)::before {
+    transform: rotate(180deg);
+  }
+}
+
+
+.slider__pagination {
+  display: none;
+}
