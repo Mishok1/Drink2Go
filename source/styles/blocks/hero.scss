@@ -1,3 +1,5 @@
+@use '../common/variables.scss';
+
 .hero {
   background-color: #f3ebe1;
 }
@@ -5,4 +7,12 @@
 .hero__container {
   padding: 20px 20px 60px 20px;
   position: relative;
+
+  @media (min-width:variables.$tablet-width) {
+    padding: 60px 80px 288px;
+  }
+
+  @media (min-width:variables.$tablet-width) {
+    padding: 30px 80px 60px;
+  }
 }
