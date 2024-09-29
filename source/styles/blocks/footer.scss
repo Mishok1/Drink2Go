@@ -24,6 +24,7 @@
     grid-template-columns: 318px 317px 318px 317px;
     font-size: 14px;
     line-height: 20px;
+    padding: 0 40px;
   }
 }
 
@@ -36,7 +37,7 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    margin: 40px 0 25px;
+    margin: 33px 0 25px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -45,7 +46,7 @@
 
 .footer__socials {
   display: flex;
-  gap: 20px;
+  gap: 18px;
   grid-column: 2 / 3;
   margin: 0;
 
@@ -163,6 +164,7 @@
   &--map::before {
     background-image: url("../../icons/map.svg");
     align-self: baseline;
+    margin-top: 1px;
   }
 
   &--tel::before {

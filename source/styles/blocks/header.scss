@@ -38,6 +38,11 @@
     display: flex;
     gap: 20px;
     padding: 22px 40px;
+    align-items: center;
+
+    & picture {
+      display: block;
+    }
   }
 }
 
