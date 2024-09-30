@@ -1,10 +1,10 @@
-report({
+{
   "testSuite": "BackstopJS",
   "tests": [
     {
       "pair": {
         "reference": "..\\bitmaps_reference\\test-06\\drink2gotest-06_0_index_header_TEST-06_PP_0__0_desktop.png",
-        "test": "..\\bitmaps_test\\20240930-232931\\drink2gotest-06_0_index_header_TEST-06_PP_0__0_desktop.png",
+        "test": "..\\bitmaps_test\\20240930-232726\\drink2gotest-06_0_index_header_TEST-06_PP_0__0_desktop.png",
         "selector": "[data-test=\"header\"]",
         "fileName": "drink2gotest-06_0_index_header_TEST-06_PP_0__0_desktop.png",
         "label": "index header TEST-06. PP.",
@@ -14,23 +14,25 @@ report({
         "referenceUrl": "./figma/index.html",
         "expect": 0,
         "viewportLabel": "desktop",
+        "engineErrorMsg": "net::ERR_CONNECTION_REFUSED at http://localhost:3000/index.html",
         "diff": {
           "isSameDimensions": true,
           "dimensionDifference": {
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 1.4678819444444444,
-          "misMatchPercentage": "1.47",
-          "analysisTime": 86
-        }
+          "rawMisMatchPercentage": 12.3359375,
+          "misMatchPercentage": "12.34",
+          "analysisTime": 129
+        },
+        "diffImage": "..\\bitmaps_test\\20240930-232726\\failed_diff_drink2gotest-06_0_index_header_TEST-06_PP_0__0_desktop.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
         "reference": "..\\bitmaps_reference\\test-06\\drink2gotest-06_0_index_header_TEST-06_PP_0__1_tablet.png",
-        "test": "..\\bitmaps_test\\20240930-232931\\drink2gotest-06_0_index_header_TEST-06_PP_0__1_tablet.png",
+        "test": "..\\bitmaps_test\\20240930-232726\\drink2gotest-06_0_index_header_TEST-06_PP_0__1_tablet.png",
         "selector": "[data-test=\"header\"]",
         "fileName": "drink2gotest-06_0_index_header_TEST-06_PP_0__1_tablet.png",
         "label": "index header TEST-06. PP.",
@@ -40,23 +42,25 @@ report({
         "referenceUrl": "./figma/index.html",
         "expect": 0,
         "viewportLabel": "tablet",
+        "engineErrorMsg": "net::ERR_CONNECTION_REFUSED at http://localhost:3000/index.html",
         "diff": {
           "isSameDimensions": true,
           "dimensionDifference": {
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 2.177734375,
-          "misMatchPercentage": "2.18",
-          "analysisTime": 74
-        }
+          "rawMisMatchPercentage": 30.392252604166664,
+          "misMatchPercentage": "30.39",
+          "analysisTime": 182
+        },
+        "diffImage": "..\\bitmaps_test\\20240930-232726\\failed_diff_drink2gotest-06_0_index_header_TEST-06_PP_0__1_tablet.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
         "reference": "..\\bitmaps_reference\\test-06\\drink2gotest-06_0_index_header_TEST-06_PP_0__2_mobile.png",
-        "test": "..\\bitmaps_test\\20240930-232931\\drink2gotest-06_0_index_header_TEST-06_PP_0__2_mobile.png",
+        "test": "..\\bitmaps_test\\20240930-232726\\drink2gotest-06_0_index_header_TEST-06_PP_0__2_mobile.png",
         "selector": "[data-test=\"header\"]",
         "fileName": "drink2gotest-06_0_index_header_TEST-06_PP_0__2_mobile.png",
         "label": "index header TEST-06. PP.",
@@ -66,23 +70,25 @@ report({
         "referenceUrl": "./figma/index.html",
         "expect": 0,
         "viewportLabel": "mobile",
+        "engineErrorMsg": "net::ERR_CONNECTION_REFUSED at http://localhost:3000/index.html",
         "diff": {
           "isSameDimensions": true,
           "dimensionDifference": {
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 1.203125,
-          "misMatchPercentage": "1.20",
-          "analysisTime": 27
-        }
+          "rawMisMatchPercentage": 48.52604166666667,
+          "misMatchPercentage": "48.53",
+          "analysisTime": 87
+        },
+        "diffImage": "..\\bitmaps_test\\20240930-232726\\failed_diff_drink2gotest-06_0_index_header_TEST-06_PP_0__2_mobile.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
         "reference": "..\\bitmaps_reference\\test-06\\drink2gotest-06_1_index_hero_TEST-06_PP_0__0_desktop.png",
-        "test": "..\\bitmaps_test\\20240930-232931\\drink2gotest-06_1_index_hero_TEST-06_PP_0__0_desktop.png",
+        "test": "..\\bitmaps_test\\20240930-232726\\drink2gotest-06_1_index_hero_TEST-06_PP_0__0_desktop.png",
         "selector": "[data-test=\"hero\"]",
         "fileName": "drink2gotest-06_1_index_hero_TEST-06_PP_0__0_desktop.png",
         "label": "index hero TEST-06. PP.",
@@ -92,23 +98,25 @@ report({
         "referenceUrl": "./figma/index.html",
         "expect": 0,
         "viewportLabel": "desktop",
+        "engineErrorMsg": "net::ERR_CONNECTION_REFUSED at http://localhost:3000/index.html",
         "diff": {
           "isSameDimensions": true,
           "dimensionDifference": {
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.04649081854964208,
-          "misMatchPercentage": "0.05",
-          "analysisTime": 287
-        }
+          "rawMisMatchPercentage": 9.506983348895114,
+          "misMatchPercentage": "9.51",
+          "analysisTime": 398
+        },
+        "diffImage": "..\\bitmaps_test\\20240930-232726\\failed_diff_drink2gotest-06_1_index_hero_TEST-06_PP_0__0_desktop.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
         "reference": "..\\bitmaps_reference\\test-06\\drink2gotest-06_1_index_hero_TEST-06_PP_0__1_tablet.png",
-        "test": "..\\bitmaps_test\\20240930-232931\\drink2gotest-06_1_index_hero_TEST-06_PP_0__1_tablet.png",
+        "test": "..\\bitmaps_test\\20240930-232726\\drink2gotest-06_1_index_hero_TEST-06_PP_0__1_tablet.png",
         "selector": "[data-test=\"hero\"]",
         "fileName": "drink2gotest-06_1_index_hero_TEST-06_PP_0__1_tablet.png",
         "label": "index hero TEST-06. PP.",
@@ -118,23 +126,25 @@ report({
         "referenceUrl": "./figma/index.html",
         "expect": 0,
         "viewportLabel": "tablet",
+        "engineErrorMsg": "net::ERR_CONNECTION_REFUSED at http://localhost:3000/index.html",
         "diff": {
           "isSameDimensions": true,
           "dimensionDifference": {
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 1.5236576590177133,
-          "misMatchPercentage": "1.52",
-          "analysisTime": 230
-        }
+          "rawMisMatchPercentage": 16.682864080112722,
+          "misMatchPercentage": "16.68",
+          "analysisTime": 432
+        },
+        "diffImage": "..\\bitmaps_test\\20240930-232726\\failed_diff_drink2gotest-06_1_index_hero_TEST-06_PP_0__1_tablet.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
         "reference": "..\\bitmaps_reference\\test-06\\drink2gotest-06_1_index_hero_TEST-06_PP_0__2_mobile.png",
-        "test": "..\\bitmaps_test\\20240930-232931\\drink2gotest-06_1_index_hero_TEST-06_PP_0__2_mobile.png",
+        "test": "..\\bitmaps_test\\20240930-232726\\drink2gotest-06_1_index_hero_TEST-06_PP_0__2_mobile.png",
         "selector": "[data-test=\"hero\"]",
         "fileName": "drink2gotest-06_1_index_hero_TEST-06_PP_0__2_mobile.png",
         "label": "index hero TEST-06. PP.",
@@ -144,23 +154,25 @@ report({
         "referenceUrl": "./figma/index.html",
         "expect": 0,
         "viewportLabel": "mobile",
+        "engineErrorMsg": "net::ERR_CONNECTION_REFUSED at http://localhost:3000/index.html",
         "diff": {
           "isSameDimensions": true,
           "dimensionDifference": {
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.2681974085365854,
-          "misMatchPercentage": "0.27",
-          "analysisTime": 102
-        }
+          "rawMisMatchPercentage": 24.36499618902439,
+          "misMatchPercentage": "24.36",
+          "analysisTime": 351
+        },
+        "diffImage": "..\\bitmaps_test\\20240930-232726\\failed_diff_drink2gotest-06_1_index_hero_TEST-06_PP_0__2_mobile.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
         "reference": "..\\bitmaps_reference\\test-06\\drink2gotest-06_2_index_features_TEST-06_PP_0__0_desktop.png",
-        "test": "..\\bitmaps_test\\20240930-232931\\drink2gotest-06_2_index_features_TEST-06_PP_0__0_desktop.png",
+        "test": "..\\bitmaps_test\\20240930-232726\\drink2gotest-06_2_index_features_TEST-06_PP_0__0_desktop.png",
         "selector": "[data-test=\"features\"]",
         "fileName": "drink2gotest-06_2_index_features_TEST-06_PP_0__0_desktop.png",
         "label": "index features TEST-06. PP.",
@@ -170,23 +182,25 @@ report({
         "referenceUrl": "./figma/index.html",
         "expect": 0,
         "viewportLabel": "desktop",
+        "engineErrorMsg": "net::ERR_CONNECTION_REFUSED at http://localhost:3000/index.html",
         "diff": {
           "isSameDimensions": true,
           "dimensionDifference": {
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 1.0094514640994785,
-          "misMatchPercentage": "1.01",
-          "analysisTime": 218
-        }
+          "rawMisMatchPercentage": 5.822553148816686,
+          "misMatchPercentage": "5.82",
+          "analysisTime": 284
+        },
+        "diffImage": "..\\bitmaps_test\\20240930-232726\\failed_diff_drink2gotest-06_2_index_features_TEST-06_PP_0__0_desktop.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
         "reference": "..\\bitmaps_reference\\test-06\\drink2gotest-06_2_index_features_TEST-06_PP_0__1_tablet.png",
-        "test": "..\\bitmaps_test\\20240930-232931\\drink2gotest-06_2_index_features_TEST-06_PP_0__1_tablet.png",
+        "test": "..\\bitmaps_test\\20240930-232726\\drink2gotest-06_2_index_features_TEST-06_PP_0__1_tablet.png",
         "selector": "[data-test=\"features\"]",
         "fileName": "drink2gotest-06_2_index_features_TEST-06_PP_0__1_tablet.png",
         "label": "index features TEST-06. PP.",
@@ -196,23 +210,25 @@ report({
         "referenceUrl": "./figma/index.html",
         "expect": 0,
         "viewportLabel": "tablet",
+        "engineErrorMsg": "net::ERR_CONNECTION_REFUSED at http://localhost:3000/index.html",
         "diff": {
           "isSameDimensions": true,
           "dimensionDifference": {
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 2.7275545634920637,
-          "misMatchPercentage": "2.73",
-          "analysisTime": 157
-        }
+          "rawMisMatchPercentage": 12.98921130952381,
+          "misMatchPercentage": "12.99",
+          "analysisTime": 428
+        },
+        "diffImage": "..\\bitmaps_test\\20240930-232726\\failed_diff_drink2gotest-06_2_index_features_TEST-06_PP_0__1_tablet.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
         "reference": "..\\bitmaps_reference\\test-06\\drink2gotest-06_2_index_features_TEST-06_PP_0__2_mobile.png",
-        "test": "..\\bitmaps_test\\20240930-232931\\drink2gotest-06_2_index_features_TEST-06_PP_0__2_mobile.png",
+        "test": "..\\bitmaps_test\\20240930-232726\\drink2gotest-06_2_index_features_TEST-06_PP_0__2_mobile.png",
         "selector": "[data-test=\"features\"]",
         "fileName": "drink2gotest-06_2_index_features_TEST-06_PP_0__2_mobile.png",
         "label": "index features TEST-06. PP.",
@@ -222,23 +238,25 @@ report({
         "referenceUrl": "./figma/index.html",
         "expect": 0,
         "viewportLabel": "mobile",
+        "engineErrorMsg": "net::ERR_CONNECTION_REFUSED at http://localhost:3000/index.html",
         "diff": {
           "isSameDimensions": true,
           "dimensionDifference": {
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 1.8150637472283813,
-          "misMatchPercentage": "1.82",
-          "analysisTime": 146
-        }
+          "rawMisMatchPercentage": 14.390243902439023,
+          "misMatchPercentage": "14.39",
+          "analysisTime": 257
+        },
+        "diffImage": "..\\bitmaps_test\\20240930-232726\\failed_diff_drink2gotest-06_2_index_features_TEST-06_PP_0__2_mobile.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
         "reference": "..\\bitmaps_reference\\test-06\\drink2gotest-06_3_index_catalog_TEST-06_PP_0__0_desktop.png",
-        "test": "..\\bitmaps_test\\20240930-232931\\drink2gotest-06_3_index_catalog_TEST-06_PP_0__0_desktop.png",
+        "test": "..\\bitmaps_test\\20240930-232726\\drink2gotest-06_3_index_catalog_TEST-06_PP_0__0_desktop.png",
         "selector": "[data-test=\"catalog\"]",
         "fileName": "drink2gotest-06_3_index_catalog_TEST-06_PP_0__0_desktop.png",
         "label": "index catalog TEST-06. PP.",
@@ -248,23 +266,25 @@ report({
         "referenceUrl": "./figma/index.html",
         "expect": 0,
         "viewportLabel": "desktop",
+        "engineErrorMsg": "net::ERR_CONNECTION_REFUSED at http://localhost:3000/index.html",
         "diff": {
           "isSameDimensions": true,
           "dimensionDifference": {
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 1.74109883364027,
-          "misMatchPercentage": "1.74",
-          "analysisTime": 244
-        }
+          "rawMisMatchPercentage": 6.466342464702271,
+          "misMatchPercentage": "6.47",
+          "analysisTime": 512
+        },
+        "diffImage": "..\\bitmaps_test\\20240930-232726\\failed_diff_drink2gotest-06_3_index_catalog_TEST-06_PP_0__0_desktop.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
         "reference": "..\\bitmaps_reference\\test-06\\drink2gotest-06_3_index_catalog_TEST-06_PP_0__1_tablet.png",
-        "test": "..\\bitmaps_test\\20240930-232931\\drink2gotest-06_3_index_catalog_TEST-06_PP_0__1_tablet.png",
+        "test": "..\\bitmaps_test\\20240930-232726\\drink2gotest-06_3_index_catalog_TEST-06_PP_0__1_tablet.png",
         "selector": "[data-test=\"catalog\"]",
         "fileName": "drink2gotest-06_3_index_catalog_TEST-06_PP_0__1_tablet.png",
         "label": "index catalog TEST-06. PP.",
@@ -274,23 +294,25 @@ report({
         "referenceUrl": "./figma/index.html",
         "expect": 0,
         "viewportLabel": "tablet",
+        "engineErrorMsg": "net::ERR_CONNECTION_REFUSED at http://localhost:3000/index.html",
         "diff": {
           "isSameDimensions": true,
           "dimensionDifference": {
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 1.3827338746569076,
-          "misMatchPercentage": "1.38",
-          "analysisTime": 165
-        }
+          "rawMisMatchPercentage": 7.805888323421775,
+          "misMatchPercentage": "7.81",
+          "analysisTime": 480
+        },
+        "diffImage": "..\\bitmaps_test\\20240930-232726\\failed_diff_drink2gotest-06_3_index_catalog_TEST-06_PP_0__1_tablet.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
         "reference": "..\\bitmaps_reference\\test-06\\drink2gotest-06_3_index_catalog_TEST-06_PP_0__2_mobile.png",
-        "test": "..\\bitmaps_test\\20240930-232931\\drink2gotest-06_3_index_catalog_TEST-06_PP_0__2_mobile.png",
+        "test": "..\\bitmaps_test\\20240930-232726\\drink2gotest-06_3_index_catalog_TEST-06_PP_0__2_mobile.png",
         "selector": "[data-test=\"catalog\"]",
         "fileName": "drink2gotest-06_3_index_catalog_TEST-06_PP_0__2_mobile.png",
         "label": "index catalog TEST-06. PP.",
@@ -300,23 +322,25 @@ report({
         "referenceUrl": "./figma/index.html",
         "expect": 0,
         "viewportLabel": "mobile",
+        "engineErrorMsg": "net::ERR_CONNECTION_REFUSED at http://localhost:3000/index.html",
         "diff": {
           "isSameDimensions": true,
           "dimensionDifference": {
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.6420378989361702,
-          "misMatchPercentage": "0.64",
-          "analysisTime": 140
-        }
+          "rawMisMatchPercentage": 9.997589760638299,
+          "misMatchPercentage": "10.00",
+          "analysisTime": 418
+        },
+        "diffImage": "..\\bitmaps_test\\20240930-232726\\failed_diff_drink2gotest-06_3_index_catalog_TEST-06_PP_0__2_mobile.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
         "reference": "..\\bitmaps_reference\\test-06\\drink2gotest-06_4_index_map_TEST-06_PP_0__0_desktop.png",
-        "test": "..\\bitmaps_test\\20240930-232931\\drink2gotest-06_4_index_map_TEST-06_PP_0__0_desktop.png",
+        "test": "..\\bitmaps_test\\20240930-232726\\drink2gotest-06_4_index_map_TEST-06_PP_0__0_desktop.png",
         "selector": "[data-test=\"map\"]",
         "fileName": "drink2gotest-06_4_index_map_TEST-06_PP_0__0_desktop.png",
         "label": "index map TEST-06. PP.",
@@ -326,23 +350,25 @@ report({
         "referenceUrl": "./figma/index.html",
         "expect": 0,
         "viewportLabel": "desktop",
+        "engineErrorMsg": "net::ERR_CONNECTION_REFUSED at http://localhost:3000/index.html",
         "diff": {
           "isSameDimensions": true,
           "dimensionDifference": {
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.39390432098765427,
-          "misMatchPercentage": "0.39",
-          "analysisTime": 124
-        }
+          "rawMisMatchPercentage": 41.92361111111111,
+          "misMatchPercentage": "41.92",
+          "analysisTime": 603
+        },
+        "diffImage": "..\\bitmaps_test\\20240930-232726\\failed_diff_drink2gotest-06_4_index_map_TEST-06_PP_0__0_desktop.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
         "reference": "..\\bitmaps_reference\\test-06\\drink2gotest-06_4_index_map_TEST-06_PP_0__1_tablet.png",
-        "test": "..\\bitmaps_test\\20240930-232931\\drink2gotest-06_4_index_map_TEST-06_PP_0__1_tablet.png",
+        "test": "..\\bitmaps_test\\20240930-232726\\drink2gotest-06_4_index_map_TEST-06_PP_0__1_tablet.png",
         "selector": "[data-test=\"map\"]",
         "fileName": "drink2gotest-06_4_index_map_TEST-06_PP_0__1_tablet.png",
         "label": "index map TEST-06. PP.",
@@ -352,23 +378,25 @@ report({
         "referenceUrl": "./figma/index.html",
         "expect": 0,
         "viewportLabel": "tablet",
+        "engineErrorMsg": "net::ERR_CONNECTION_REFUSED at http://localhost:3000/index.html",
         "diff": {
           "isSameDimensions": true,
           "dimensionDifference": {
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0,
-          "misMatchPercentage": "0.00",
-          "analysisTime": 95
-        }
+          "rawMisMatchPercentage": 59.96310763888889,
+          "misMatchPercentage": "59.96",
+          "analysisTime": 840
+        },
+        "diffImage": "..\\bitmaps_test\\20240930-232726\\failed_diff_drink2gotest-06_4_index_map_TEST-06_PP_0__1_tablet.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
         "reference": "..\\bitmaps_reference\\test-06\\drink2gotest-06_4_index_map_TEST-06_PP_0__2_mobile.png",
-        "test": "..\\bitmaps_test\\20240930-232931\\drink2gotest-06_4_index_map_TEST-06_PP_0__2_mobile.png",
+        "test": "..\\bitmaps_test\\20240930-232726\\drink2gotest-06_4_index_map_TEST-06_PP_0__2_mobile.png",
         "selector": "[data-test=\"map\"]",
         "fileName": "drink2gotest-06_4_index_map_TEST-06_PP_0__2_mobile.png",
         "label": "index map TEST-06. PP.",
@@ -378,23 +406,25 @@ report({
         "referenceUrl": "./figma/index.html",
         "expect": 0,
         "viewportLabel": "mobile",
+        "engineErrorMsg": "net::ERR_CONNECTION_REFUSED at http://localhost:3000/index.html",
         "diff": {
           "isSameDimensions": true,
           "dimensionDifference": {
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.13764880952380953,
-          "misMatchPercentage": "0.14",
-          "analysisTime": 63
-        }
+          "rawMisMatchPercentage": 53.211309523809526,
+          "misMatchPercentage": "53.21",
+          "analysisTime": 310
+        },
+        "diffImage": "..\\bitmaps_test\\20240930-232726\\failed_diff_drink2gotest-06_4_index_map_TEST-06_PP_0__2_mobile.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
         "reference": "..\\bitmaps_reference\\test-06\\drink2gotest-06_5_index_footer_TEST-06_PP_0__0_desktop.png",
-        "test": "..\\bitmaps_test\\20240930-232931\\drink2gotest-06_5_index_footer_TEST-06_PP_0__0_desktop.png",
+        "test": "..\\bitmaps_test\\20240930-232726\\drink2gotest-06_5_index_footer_TEST-06_PP_0__0_desktop.png",
         "selector": "[data-test=\"footer\"]",
         "fileName": "drink2gotest-06_5_index_footer_TEST-06_PP_0__0_desktop.png",
         "label": "index footer TEST-06. PP.",
@@ -404,23 +434,25 @@ report({
         "referenceUrl": "./figma/index.html",
         "expect": 0,
         "viewportLabel": "desktop",
+        "engineErrorMsg": "net::ERR_CONNECTION_REFUSED at http://localhost:3000/index.html",
         "diff": {
           "isSameDimensions": true,
           "dimensionDifference": {
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.8744855967078189,
-          "misMatchPercentage": "0.87",
-          "analysisTime": 132
-        }
+          "rawMisMatchPercentage": 8.048073325851103,
+          "misMatchPercentage": "8.05",
+          "analysisTime": 229
+        },
+        "diffImage": "..\\bitmaps_test\\20240930-232726\\failed_diff_drink2gotest-06_5_index_footer_TEST-06_PP_0__0_desktop.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
         "reference": "..\\bitmaps_reference\\test-06\\drink2gotest-06_5_index_footer_TEST-06_PP_0__1_tablet.png",
-        "test": "..\\bitmaps_test\\20240930-232931\\drink2gotest-06_5_index_footer_TEST-06_PP_0__1_tablet.png",
+        "test": "..\\bitmaps_test\\20240930-232726\\drink2gotest-06_5_index_footer_TEST-06_PP_0__1_tablet.png",
         "selector": "[data-test=\"footer\"]",
         "fileName": "drink2gotest-06_5_index_footer_TEST-06_PP_0__1_tablet.png",
         "label": "index footer TEST-06. PP.",
@@ -430,23 +462,25 @@ report({
         "referenceUrl": "./figma/index.html",
         "expect": 0,
         "viewportLabel": "tablet",
+        "engineErrorMsg": "net::ERR_CONNECTION_REFUSED at http://localhost:3000/index.html",
         "diff": {
           "isSameDimensions": true,
           "dimensionDifference": {
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.19460484601449274,
-          "misMatchPercentage": "0.19",
-          "analysisTime": 159
-        }
+          "rawMisMatchPercentage": 17.342476222826086,
+          "misMatchPercentage": "17.34",
+          "analysisTime": 406
+        },
+        "diffImage": "..\\bitmaps_test\\20240930-232726\\failed_diff_drink2gotest-06_5_index_footer_TEST-06_PP_0__1_tablet.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
         "reference": "..\\bitmaps_reference\\test-06\\drink2gotest-06_5_index_footer_TEST-06_PP_0__2_mobile.png",
-        "test": "..\\bitmaps_test\\20240930-232931\\drink2gotest-06_5_index_footer_TEST-06_PP_0__2_mobile.png",
+        "test": "..\\bitmaps_test\\20240930-232726\\drink2gotest-06_5_index_footer_TEST-06_PP_0__2_mobile.png",
         "selector": "[data-test=\"footer\"]",
         "fileName": "drink2gotest-06_5_index_footer_TEST-06_PP_0__2_mobile.png",
         "label": "index footer TEST-06. PP.",
@@ -456,19 +490,21 @@ report({
         "referenceUrl": "./figma/index.html",
         "expect": 0,
         "viewportLabel": "mobile",
+        "engineErrorMsg": "net::ERR_CONNECTION_REFUSED at http://localhost:3000/index.html",
         "diff": {
           "isSameDimensions": true,
           "dimensionDifference": {
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 1.5922190201729105,
-          "misMatchPercentage": "1.59",
-          "analysisTime": 89
-        }
+          "rawMisMatchPercentage": 16.86149135446686,
+          "misMatchPercentage": "16.86",
+          "analysisTime": 273
+        },
+        "diffImage": "..\\bitmaps_test\\20240930-232726\\failed_diff_drink2gotest-06_5_index_footer_TEST-06_PP_0__2_mobile.png"
       },
-      "status": "pass"
+      "status": "fail"
     }
   ],
   "id": "drink2go test-06"
-});
+}
