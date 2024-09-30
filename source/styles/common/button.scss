@@ -15,11 +15,40 @@
     background-color: $primary-color;
     color: #ffffff;
     padding: 8px 20px;
+
+    &:hover,
+    &:focus {
+      background-color: #9070EC;
+    }
+
+    &:active {
+      background-color: #593CAC;
+    }
+
+    &:disabled {
+      background-color: #BDBDBD;
+    }
   }
 
   &--secondary {
     background-color: #ffffff;
     color: $primary-color;
     padding: 8px 20px;
+
+    &:hover,
+    &:focus {
+      background-color: #9070EC;
+      color: #FFFFFF;
+    }
+
+    &:active {
+      background-color: #593CAC;
+      color: #FFFFFF;
+    }
+
+    &:disabled {
+      background-color: #E2E2E2;
+      color: #FFFFFF;
+    }
   }
 }

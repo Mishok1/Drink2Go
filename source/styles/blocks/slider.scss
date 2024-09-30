@@ -4,6 +4,17 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: flex;
+  overflow-x: clip;
+  overflow-y: hidden;
+
+  @media (min-width:variables.$tablet-width) {
+    overflow-y: unset;
+  }
+
+  @media (min-width:variables.$desktop-width) {
+    overflow-y: hidden;
+  }
 }
 
 .slider__item {
@@ -11,6 +22,9 @@
   grid-template-columns: repeat(2, auto);
   column-gap: 20px;
   justify-items: flex-start;
+  width: 100%;
+  flex-shrink: 0;
+  transform: translateX(0%);
 
   @media (min-width: variables.$desktop-width) {
     grid-template-columns: auto 97px auto;
@@ -156,6 +170,19 @@
     grid-column: 3 / 4;
     grid-row: 4 / 5;
   }
+
+  &:hover,
+  &:focus {
+    background-color: #9070EC;
+  }
+
+  &:active {
+    background-color: #593CAC;
+  }
+
+  &:disabled {
+    background-color: #BDBDBD;
+  }
 }
 
 .slider__button {
@@ -172,6 +199,15 @@
     width: 80px;
   }
 
+  &:hover,
+  &:focus {
+    background-image: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, #fff 100%);
+  }
+
+  &:active {
+    background-image: linear-gradient(-90deg, rgba(255, 255, 255, 0) 0%, rgba(120, 89, 207, 0.25) 100%);
+  }
+
   &::before {
     content: "";
     display: block;
@@ -181,10 +217,23 @@
     background: url("../../icons/slider-arrow.svg") no-repeat center;
   }
 
+  &:disabled::before {
+    background-image: url("../../icons/slider-arrow-disabled.svg");
+  }
+
 
   &:nth-child(2) {
     left: unset;
     right: 0;
+
+    &:hover,
+    &:focus {
+      background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #fff 100%);
+    }
+
+    &:active {
+      background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(120, 89, 207, 0.25) 100%);
+    }
   }
 
   &:nth-child(2)::before {
@@ -213,6 +262,7 @@
     display: flex;
     align-items: center;
     padding: 0;
+    cursor: pointer;
 
     &::before {
       content: "";
@@ -222,6 +272,15 @@
     }
 
     &--current::before {
+      background-color: $primary-color;
+    }
+
+    &:hover::before,
+    &:focus::before {
+      background-color: rgba(120, 89, 207, 0.25);
+    }
+
+    &:active::before {
       background-color: $primary-color;
     }
   }
