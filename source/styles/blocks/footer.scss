@@ -37,7 +37,7 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    margin: 33px 0 25px;
+    margin: 33px 0 -18px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -49,6 +49,7 @@
   gap: 18px;
   grid-column: 2 / 3;
   margin: 0;
+  align-items: center;
 
   @media (min-width: variables.$tablet-width) {
     grid-column: 3 / 4;
@@ -208,10 +209,6 @@
     height: 16px;
     background: url("../../icons/html-academy.svg") no-repeat center;
     margin-left: 4px;
-  }
-
-  &:hover {
-    color: $primary-color;
   }
 
   &:hover {

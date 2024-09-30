@@ -51,7 +51,7 @@
   list-style-type: none;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 32px;
+  gap: 34px;
 
   @media (min-width: variables.$tablet-width) {
     grid-template-columns: repeat(2, 1fr);
@@ -80,6 +80,8 @@
     content: "";
     background: no-repeat center;
     margin: 0 auto 10px;
+    width: 50px;
+    height: 54px;
 
     @media (min-width: variables.$tablet-width) {
       grid-row: 1 / 3;
@@ -94,7 +96,18 @@
   }
 
   &--comfort {
-    margin-left: -10px;
+
+    &::before {
+      height: 56px;
+      width: 52px;
+      background-image: url("../../icons/comfort.svg");
+
+      @media (min-width: variables.$tablet-width) {
+        margin-left: -10px;
+      }
+
+    }
+
 
     @media (min-width: variables.$desktop-width) {
       margin-left: 0;
@@ -102,13 +115,11 @@
   }
 
   &--speed::before {
-    margin-top: 4px;
     background-image: url("../../icons/speed.svg");
-  }
 
-  &--comfort::before {
-    width: 52px;
-    background-image: url("../../icons/comfort.svg");
+    @media (min-width: variables.$desktop-width) {
+      margin-top: 4px;
+    }
   }
 
   &--vigor::before {

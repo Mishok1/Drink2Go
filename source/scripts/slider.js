@@ -130,5 +130,3 @@ sliderButtonNext.addEventListener('click', (evt) => {
   disableButtons(currentSlideValue);
   changeBackgroundColor(currentSlideValue);
 });
-
-

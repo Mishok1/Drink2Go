@@ -5,7 +5,14 @@
   <meta charset="UTF-8">
   <title>Drink2Go</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="preload" href="#" type="font/woff2" as="font">
+  <meta name="description" content="Drink2Go — интернет-магазин по продаже кофейных напитков.">
+  <link rel="preload" href="fonts/Montserrat/Montserrat-400.woff2" type="font/woff2" as="font">
+  <link rel="preload" href="fonts/Montserrat/Montserrat-500.woff2" type="font/woff2" as="font">
+  <link rel="preload" href="fonts/Montserrat/Montserrat-600.woff2" type="font/woff2" as="font">
+  <link rel="preload" href="fonts/Montserrat/Montserrat-700.woff2" type="font/woff2" as="font">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="favicons/favicon-180.png">
+  <link rel="icon" href="favicons/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
@@ -50,7 +57,8 @@
             </button>
           </li>
           <li class="navigation__item navigation__item--hidden">
-            <button class="navigation__button navigation__button--menu button js-toggle-button" id="menu-button" type="button">
+            <button class="navigation__button navigation__button--menu button js-toggle-button" id="menu-button"
+              type="button">
               <span class="navigation__button-text">Меню</span>
             </button>
           </li>
@@ -86,28 +94,24 @@
               <span class="slider__badge badge">Новинка!</span>
               <h3 class="slider__title">Декаф Флэт Уайт</h3>
               <p class="slider__description">Свежесваренный кофе без кофеина из Эфиопии<br class="slider__br"> с
-                натуральным фермерским молоком
-                —
-                то, что нужно<br class="slider__br"> для расслабления после тяжёлого рабочего дня</p>
+                натуральным фермерским молоком — то, что нужно<br class="slider__br"> для расслабления после тяжёлого
+                рабочего дня</p>
               <div class="slider__prices">
                 <span class="slider__old-price">295₽</span>
                 <span class="slider__new-price">225₽</span>
               </div>
               <a class="slider__link" href="#">Заказать</a>
             </li>
-            <li style="background-color: #EAE6FC;" class="slider__item">
+            <li class="slider__item">
               <picture>
                 <source media="(min-width: 1440px)" type="image/webp"
-                  srcset="images/slider-2@1x.webp 1x, images/slider-2@2x.webp 2x" width="600"
-                  height="600">
+                  srcset="images/slider-2@1x.webp 1x, images/slider-2@2x.webp 2x" width="600" height="600">
                 <source media="(min-width: 768px)" type="image/webp"
-                  srcset="images/slider-2@1x.webp 1x, images/slider-2@2x.webp 2x" width="476"
-                  height="476">
+                  srcset="images/slider-2@1x.webp 1x, images/slider-2@2x.webp 2x" width="476" height="476">
                 <source type="image/webp" srcset="images/slider-2@1x.webp 1x, images/slider-2@2x.webp 2x" width="280"
                   height="280">
                 <source media="(min-width: 1440px)" type="image/jpg"
-                  srcset="images/slider-2@1x.jpg 1x, images/slider-2@2x.jpg 2x" width="600"
-                  height="600">
+                  srcset="images/slider-2@1x.jpg 1x, images/slider-2@2x.jpg 2x" width="600" height="600">
                 <source media="(min-width: 768px)" type="image/jpg"
                   srcset="images/slider-2@1x.jpg 1x, images/slider-2@2x.jpg 2x" width="476" height="476">
                 <img class="slider__image" src="images/slider-2@1x.jpg" srcset="images/slider-2@2x.jpg 2x" width="280"
@@ -115,26 +119,24 @@
               </picture>
               <span class="slider__badge badge">Новинка!</span>
               <h3 class="slider__title">Лавандовый Латте</h3>
-              <p class="slider__description">Невероятное сочетание перуанской высокогорной<br>арабики с молоком ламы и лавандовым сиропом унесёт<br>вас прямо на вершину Радужных гор</p>
+              <p class="slider__description">Невероятное сочетание перуанской высокогорной<br>арабики с молоком ламы и
+                лавандовым сиропом унесёт<br>вас прямо на вершину Радужных гор</p>
               <div class="slider__prices">
                 <span class="slider__old-price">285₽</span>
                 <span class="slider__new-price">265₽</span>
               </div>
               <a class="slider__link" href="#">Заказать</a>
             </li>
-            <li style="background-color: #E5E6E8;" class="slider__item">
+            <li class="slider__item">
               <picture>
                 <source media="(min-width: 1440px)" type="image/webp"
-                  srcset="images/slider-3@1x.webp 1x, images/slider-3@2x.webp 2x" width="600"
-                  height="600">
+                  srcset="images/slider-3@1x.webp 1x, images/slider-3@2x.webp 2x" width="600" height="600">
                 <source media="(min-width: 768px)" type="image/webp"
-                  srcset="images/slider-2@1x.webp 1x, images/slider-2@2x.webp 2x" width="476"
-                  height="476">
+                  srcset="images/slider-2@1x.webp 1x, images/slider-2@2x.webp 2x" width="476" height="476">
                 <source type="image/webp" srcset="images/slider-3@1x.webp 1x, images/slider-3@2x.webp 2x" width="280"
                   height="280">
                 <source media="(min-width: 1440px)" type="image/jpg"
-                  srcset="images/slider-3@1x.jpg 1x, images/slider-3@2x.jpg 2x" width="600"
-                  height="600">
+                  srcset="images/slider-3@1x.jpg 1x, images/slider-3@2x.jpg 2x" width="600" height="600">
                 <source media="(min-width: 768px)" type="image/jpg"
                   srcset="images/slider-2@1x.jpg 1x, images/slider-2@2x.jpg 2x" width="476" height="476">
                 <img class="slider__image" src="images/slider-3@1x.jpg" srcset="images/slider-3@2x.jpg 2x" width="280"
@@ -142,7 +144,8 @@
               </picture>
               <span class="slider__badge badge">Новинка!</span>
               <h3 class="slider__title">Тройной Эспрессо</h3>
-              <p class="slider__description">Мощнее укола адреналина, чернее самой тёмной ночи,<br class="slider__br">этот тройной эспрессо из Колумбии покажет вам,<br> что такое настоящая бодрость</p>
+              <p class="slider__description">Мощнее укола адреналина, чернее самой тёмной ночи,<br
+                  class="slider__br">этот тройной эспрессо из Колумбии покажет вам,<br> что такое настоящая бодрость</p>
               <div class="slider__prices">
                 <span class="slider__old-price">395₽</span>
                 <span class="slider__new-price">375₽</span>
@@ -200,7 +203,8 @@
       <div class="catalog__container container">
         <span class="catalog__badge badge">Каталог</span>
         <h2 class="catalog__title title">Каталог кофейных напитков</h2>
-        <form class="catalog__form form" enctype='multipart/form-data' action="https://echo.htmlacademy.ru" method="post">
+        <form class="catalog__form form" enctype="multipart/form-data" action="https://echo.htmlacademy.ru"
+          method="post">
           <fieldset class="form__field ">
             <legend class="form__title">Цена</legend>
             <div class="form__range-slider range-slider">
@@ -294,7 +298,7 @@
           </fieldset>
           <div class="form__buttons">
             <button class="form__button button button--primary" type="submit">Применить</button>
-            <button class="form__button button button--secondary" type="button">Сбросить</button>
+            <button class="form__button button button--secondary" type="reset">Сбросить</button>
           </div>
         </form>
         <div class="catalog__sorting sorting">
@@ -404,22 +408,20 @@
       </div>
     </section>
     <section class="map" data-test="map">
-      <div class="map__container container">
-        <h2 class="visually-hidden">Карта</h2>
-        <picture>
-          <source media="(min-width: 1440px)" type="image/webp"
-            srcset="images/map-desktop@1x.webp 1x, images/map-desktop@2x.webp 2x" width="1440" height="540">
-          <source media="(min-width: 768px)" type="image/webp"
-            srcset="images/map-tablet@1x.webp 1x, images/map-tablet@2x.webp 2x" width="768" height="480">
-          <source type="image/webp" srcset="images/map@1x.webp 1x, images/map@2x.webp 2x" width="320" height="420">
-          <source media="(min-width: 1440px)" type="image/jpeg"
-            srcset="images/map-desktop@1x.jpg 1x, images/map-desktop@2x.jpg 2x" width="1440" height="540">
-          <source media="(min-width: 768px)" type="image/jpeg"
-            srcset="images/map-tablet@1x.jpg 1x, images/map-tablet@2x.jpg 2x" width="768" height="480">
-          <img class="map__image" src="images/map@1x.jpg" srcset="images/map@2x.jpg 2x" width="320" height="420"
-            alt="Карта.">
-        </picture>
-      </div>
+      <h2 class="visually-hidden">Карта</h2>
+      <picture>
+        <source media="(min-width: 1440px)" type="image/webp"
+          srcset="images/map-desktop@1x.webp 1x, images/map-desktop@2x.webp 2x" width="1440" height="540">
+        <source media="(min-width: 768px)" type="image/webp"
+          srcset="images/map-tablet@1x.webp 1x, images/map-tablet@2x.webp 2x" width="768" height="480">
+        <source type="image/webp" srcset="images/map@1x.webp 1x, images/map@2x.webp 2x" width="320" height="420">
+        <source media="(min-width: 1440px)" type="image/jpeg"
+          srcset="images/map-desktop@1x.jpg 1x, images/map-desktop@2x.jpg 2x" width="1440" height="540">
+        <source media="(min-width: 768px)" type="image/jpeg"
+          srcset="images/map-tablet@1x.jpg 1x, images/map-tablet@2x.jpg 2x" width="768" height="480">
+        <img class="map__image" src="images/map@1x.jpg" srcset="images/map@2x.jpg 2x" width="320" height="420"
+          alt="Карта.">
+      </picture>
     </section>
   </main>
   <footer class="footer" data-test="footer">
@@ -513,4 +515,4 @@
 
 
 <!-- sostoyaniye Filtering&Sorting Elements (form) -->
-
+<!-- slider mobile fix espresos -->
