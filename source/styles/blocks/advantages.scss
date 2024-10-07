@@ -106,6 +106,10 @@
         margin-left: -10px;
       }
 
+         @media (min-width: variables.$desktop-width) {
+        margin-left: auto;
+      }
+
     }
 
 
